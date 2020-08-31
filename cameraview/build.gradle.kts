@@ -6,7 +6,10 @@ plugins {
     id("kotlin-android")
     id("com.otaliastudios.tools.publisher")
     id("jacoco")
+    id("com.github.dcendents.android-maven")
 }
+
+var group="com.github.mj-heaton"
 
 android {
     setCompileSdkVersion(rootProject.property("compileSdkVersion") as Int)
@@ -48,7 +51,7 @@ publisher {
             "pictures and videos easy, addressing all of the common issues and needs. " +
             "Real-time filters, gestures, watermarks, frame processing, RAW, output of any size."
     project.artifact = "cameraview"
-    project.group = "com.otaliastudios"
+    project.group = "com.github.mj-heaton"
     project.url = "https://github.com/natario1/CameraView"
     project.addLicense(License.APACHE_2_0)
     release.setSources(Release.SOURCES_AUTO)

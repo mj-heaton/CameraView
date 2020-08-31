@@ -17,6 +17,7 @@ buildscript {
         classpath("com.otaliastudios.tools:publisher:0.3.3")
         val kotlinVersion = property("kotlinVersion") as String
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
 
     }
 }
